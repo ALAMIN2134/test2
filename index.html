@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic To-Do App</title>
+    <link rel="stylesheet" href="/style/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic To-Do App</h1>
+        <div id="auth-form">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+        </div>
+
+        <div id="todo-app" style="display: none;">
+            <h2>My To-Do List</h2>
+            <p>Welcome, <span id="user-display"></span>!</p>
+            <form id="add-task-form">
+                <input type="text" id="new-task" placeholder="Add a new task..." required>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="todo-list"></ul>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </div>
+    <script src="/script/index.js"></script>
+</body>
+</html>
